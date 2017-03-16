@@ -17,11 +17,20 @@ export function addComment(postId, author, comment) {
 }
 
 // remove comment
-
 export function removeComment(postId, i) {
   return {
     type: 'REMOVE_COMMENT',
     i,
     postId
+  }
+}
+
+// -------------------------------------------------------------------------
+
+// get next verse
+export function getNextVerse(index) {
+  return {
+    type: 'GET_NEXT_VERSE',
+    index
   }
 }
